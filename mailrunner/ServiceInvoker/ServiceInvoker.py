@@ -13,7 +13,8 @@ payload_multiple = {
     "from": "drmailsender@gmail.com",
     "to": ["arjunchandgude61@gmail.com",
             "nakeupearly@gmail.com",
-            "chaitanyarastogi1@gmail.com"
+            "chaitanyarastogi1@gmail.com",
+            "mihikaa.iyer@gmail.com"
            ],
     "sub": "Message from Invoker to multiple people",
     "msg_content": "This message is from the invoker.\nThe Invoker is a respected person who called the doctor to send the mail.\nBe nice to invoker...   ..or else.."
