@@ -78,6 +78,7 @@ class DrMail:
                 email.set_content(msg_content)
 
                 self.smtp.send_message(email)
+                log.log(log_level.INFO, "Worker.py", f"Message Sent... to {address}")
 
             return True
 
