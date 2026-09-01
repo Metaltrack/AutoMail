@@ -1,0 +1,7 @@
+# Remote Notification Service requirements
+# Install these with `npm install` from the project folder.
+
+Node.js >= 18 (Node.js 24 LTS recommended)
+express@^4.21.2
+nodemailer@^6.10.0
+dotenv@^16.4.7
