@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0d2d8ff0-eae0-4f1c-8dfd-b21d0fe509de</ProjectGuid>
+    <ProjectGuid>5117047a-38bb-4bf3-b3c2-7df7a488f3c0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AutoMailAPI.py</StartupFile>
+    <StartupFile>ServiceInvoker.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>DrPost</Name>
-    <RootNamespace>DrPost</RootNamespace>
+    <Name>ServiceInvoker</Name>
+    <RootNamespace>ServiceInvoker</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,13 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AutoMailAPI.py" />
-    <Compile Include="logger.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Worker.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="ServiceInvoker.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
