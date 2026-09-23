@@ -16,7 +16,7 @@ class DrMail:
             self.port = port
 
             self.smtp = SMTP(host, port)
-            self.smtp.connect(host, port)
+            #self.smtp.connect(host, port)
 
             status_code, response = self.smtp.ehlo()
             log.log(log_level.INFO, "Worker.py", f"status_code: {status_code} | response: {response}")
@@ -47,7 +47,7 @@ class DrMail:
             log.log(log_level.INFO, "Worker.py", f"Message Sent...")
         except Exception as err:
             log.log(log_level.ERROR, "Worker.py", f"SendMail function: {err}")
-            raise Exception(err)
+            raise #Exception(err)
             return
 
     def SendMultipleMail(self, from_addr, *to_addr, sub, msg_content):
