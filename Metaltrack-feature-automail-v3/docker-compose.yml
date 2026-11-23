@@ -1,0 +1,14 @@
+services:
+  automail:
+    build: .
+    ports:
+      - "6767:6767"
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+    volumes:
+      - automail-data:/data      # database and attachments survive restarts
+    restart: unless-stopped
+
+volumes:
+  automail-data:
